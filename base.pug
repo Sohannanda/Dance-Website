@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title Academy of Dance
+    block scripts
+    block style 
+  body
+    nav#navbar.top
+        div#logo
+          img(src="../static/logo.png", alt="Academy of Dance")
+        ul
+
+          li #[a(href = "/") Home]
+          li #[a(href = "/") Services]
+          li #[a(href = "/") Class Info]
+          li #[a(href = "/") About Us]
+          li #[a(href = "/contact") Contact Us]
+    block content
+    footer#footer
+        | Copyright &copy 2021 Academy of Dance

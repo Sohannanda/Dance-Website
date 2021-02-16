@@ -1,0 +1,62 @@
+//- index.pug
+doctype html
+html
+  head
+    title Academy of Dance
+    style
+      include ../static/style.css
+  body
+    nav#navbar.top
+        div#logo
+          img(src="../static/logo.png", alt="Academy of Dance")
+        ul
+
+          li #[a(href = "/") Home]
+          li #[a(href = "/") Services]
+          li #[a(href = "/") Class Info]
+          li #[a(href = "/") About Us]
+          li #[a(href = "/") Contact Us]
+    
+    section#intro
+        div Welcome to Academy of Dance.
+        div.small Dancers don't need wings to fly.
+
+    section#mission
+        h2 Our Mission
+        div.cards
+          div.card
+            h3 Dance Perfection
+            div.card-box
+              div.card-img
+                img(src="../static/img1.png", alt="Dance Academy", srcset="")
+              div.card-cont 
+                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi consequuntur obcaecati temporibus itaque? Accusamus, voluptates veniam facere nihil exercitationem nobis nisi similique, ipsam dolor magni cum, obcaecati commodi maiores illum autem possimus in recusandae magnam!
+          div.card
+            h3 Dance as you like
+            div.card-box
+              div.card-img
+                img(src="../static/img2.png", alt="Dance Academy", srcset="")
+              div.card-cont 
+                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi consequuntur obcaecati temporibus itaque? Accusamus, voluptates veniam facere nihil exercitationem nobis nisi similique, ipsam dolor magni cum, obcaecati commodi maiores illum autem possimus in recusandae magnam!
+          div.card
+            h3 Expert Teaching
+            div.card-box
+              div.card-img
+                img(src="../static/img3.jpg", alt="Dance Academy", srcset="")
+              div.card-cont 
+                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi consequuntur obcaecati temporibus itaque? Accusamus, voluptates veniam facere nihil exercitationem nobis nisi similique, ipsam dolor magni cum, obcaecati commodi maiores illum autem possimus in recusandae magnam!
+
+    section#sponsors
+        h3 Our Sponsors
+        div#sponsor-img  
+         img(src="../static/img/logo1.png", alt="Sponsor Image")
+         img(src="../static/img/logo2.png", alt="Sponsor Image")
+         img(src="../static/img/logo3.png", alt="Sponsor Image")
+         img(src="../static/img/logo4.png", alt="Sponsor Image")
+
+    footer#footer
+        | Copyright &copy 2021 Academy of Dance
+    
+    
+    script
+      include ../static/index.js
